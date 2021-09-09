@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.80.0">
-  <title>weatherApp</title>
+  <title>WeatherApp</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
 
@@ -57,12 +57,26 @@
 <body class="d-flex h-100 text-white bg-dark">
 
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="mb-auto">
+    <!-- <header class="mb-auto"> -->
+    <header>
       <div>
-        <h3 class="brand float-md-start mb-0">weatherapp</h3>
+        <h3 class="brand float-md-start mb-0">WeatherApp</h3>
         <nav class="nav nav-masthead justify-content-center float-md-end">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Contact</a>
+          <%if (page === "index") {%>
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link" href="/contact">Contact</a>
+          <%} else if (page === "contact") {%>
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link active" aria-current="page" href="/contact">Contact</a>
+          <%} else {%>
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/contact">Contact</a>
+          <%}%>
+          <!-- <a class="nav-link" href="/">Home</a>
+
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+           show active link
+          <a class="nav-link" href="/contact">Contact</a> -->
         </nav>
       </div>
     </header>

@@ -5,14 +5,26 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6 image-column">
-      <h2><%=location%></h2>
-      <p><%=weatherDescription%></p>
-      <p>The temperature is <%=localTemp%>&#176; Celsius </p>
+      <h2><%=location%> - <%=weatherDescription%></h2>
+      <hr />
+      <div class="result-details">
+        <p>
+          Temperature: <%=localTemp%>&#176; Celsius
+        </p>
+        <p>
+          Feels Like: <%=localTempFeelsLike%>&#176; Celsius
+        </p>
+        <p>
+          Wind Speed: <%=windSpeed%> km/h
+        </p>
+      </div>
+
     </div>
     <div class="col-lg-6 text-column">
       <img class="main-image" src=<%=weatherIconUrl%> alt="Can't load image">
     </div>
   </div>
+</div>
 
 
   <%- include("footer"); -%>

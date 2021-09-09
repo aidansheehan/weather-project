@@ -36,8 +36,7 @@ body {
 }
 
 .text-column {
-  text-align: right;
-  padding-right: 0;
+  padding-left: 0;
 }
 
 #input-field {
@@ -45,7 +44,23 @@ body {
 }
 
 .image-column {
-  padding-left: 0;
+  padding-right: 0;
+}
+
+.main-image {
+  display: block;
+  margin: auto;
+}
+
+a:hover {
+  color: #fff;
+  /*font-size: 1.1em;*/
+  text-decoration: underline;
+}
+
+a {
+  color: rgba(255, 255, 255, .5);
+  text-decoration: none;
 }
 
 /*
@@ -74,10 +89,37 @@ body {
   border-bottom-color: #fff;
 }
 
+header {
+  margin-bottom: 75px;
+}
+
 /*
  * Footer
 */
 
 footer {
+  bottom: 5px;
+  position: sticky;
   text-align: center;
+}
+
+/*
+ * Results Page
+*/
+.result-details {
+  margin-top: 2.5rem;
+}
+
+/*
+ * Contact Page
+ */
+.profile-image {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: 75%;
+}
+
+.contact p {
+  margin: 1.5rem 0 1.5rem 0;
 }

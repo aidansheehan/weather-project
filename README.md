@@ -15,3 +15,7 @@ Contributions welcome.
 ## Link
 
 This project is hosted here: https://weather-app-aidan.herokuapp.com/
+
+## Contact Me
+
+Send me an email at aidanmsheehan@gmail.com 

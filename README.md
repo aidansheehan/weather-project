@@ -1,4 +1,4 @@
-# Weather Project
+# weather-project
 
 ## Description
 

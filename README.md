@@ -12,4 +12,6 @@ Anybody is welcome to clone and change this repo. Use npm install to install nod
 
 Contributions welcome.
 
+<h2>Link</h2>
 
+This project is hosted here: https://weather-app-aidan.herokuapp.com/
